@@ -52,6 +52,8 @@ fun main() {
             println("комиссия при переводе не взимается")
         } else if (typeCard == "VK PAY" && amount + amount2 > 40000 && amount > 15000) {
             println("Вы исчерпали лимит переводов, Сэр!")
+        } else if (typeCard != "VK PAY" || typeCard != "Mastercard" || typeCard != "Maestro" || typeCard != "Visa" || typeCard != "Мир"){
+            println("такой нет карты, Сэр!")
         }
 
 
